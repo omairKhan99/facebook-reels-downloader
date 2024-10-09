@@ -30,8 +30,9 @@ A Python-based tool to download Facebook Reels in various video and audio format
    selenium
    yt-dlp
 
-3. **Verify yt-dlp Installation:**
+3. **Verify selenium and yt-dlp Installation:**
    ```bash
+   pip install selenium
    pip install yt-dlp
    ```
 
