@@ -61,4 +61,4 @@ with open(csv_path, "w", newline='') as csvfile:
 
 #choosing popular video formats
 video_formats = ["mp4", "mov", "webm", "mkv"]
-
+audio_formats = ["mp3"]
