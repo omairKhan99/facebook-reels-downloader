@@ -42,8 +42,8 @@ Once the setup is complete, you can download Facebook Reels by running the Pytho
  ```bash 
 python reels_downloader.py <channel_name> <channel_reel_url> <format>
 ```
-- channel_name: Name of the Facebook channel (used for saving downloaded files)
-- channel_reel_url: The URL of the channel's Reels page
+- channel_name: Name of the Facebook channel (used for saving downloaded files) (can be set to anything) 
+- channel_reel_url: The URL of the channel's Reels page 
 - format: The desired format for the download. Supported formats include mp4, mov, webm, mkv for videos and mp3, aac, wav for audio
 
 
