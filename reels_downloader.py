@@ -63,3 +63,15 @@ with open(csv_path, "w", newline='') as csvfile:
 video_formats = ["mp4", "mov", "webm", "mkv"]
 audio_formats = ["mp3", "aac", "wav"]
 
+if format_choice in video_formats:
+    args = ["yt-dlp", "-f", "best", "-a", csv_path, "--recode-video", format_choice,
+            "--output", os.path.join(output_dir, "%(id)s.%(ext)s")]
+elif format_choice in audio_formats:
+    args = ["yt-dlp", "-f", "bestaudio", "-a", csv_path, "--extract-audio", 
+            "--audio-format", format_choice, "--output", os.path.join(output_dir, "%(id)s.%(ext)s")]
+else:
+    print("Invalid format specified.")
+    sys.exit(1)
+
+
+
