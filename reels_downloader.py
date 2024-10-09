@@ -59,6 +59,7 @@ with open(csv_path, "w", newline='') as csvfile:
     for url in reel_urls:
         writer.writerow([url])
 
-#choosing popular video formats
+#choosing popular audio and video formats 
 video_formats = ["mp4", "mov", "webm", "mkv"]
-audio_formats = ["mp3"]
+audio_formats = ["mp3", "aac", "wav"]
+
